@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+	    <input type="text" name="name" data-conv-question="what is your name?">
+      <select data-conv-question="Hello👋👋 amigo!!, what your fav time?" name="category">
+        <option value="WebDevelopment">Morning ☀️ </option>
+        <option value="DigitalMarketing">Evevning 🌙🌕</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Yoo Sunrise and walk is best for positive start">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Snaks and restup with NETFLIX right??🍿🍿 maybe best way to nuetralise the day"> 
+        </div>
+      </div>
+      
+	  <input type="text" name="abc" data-conv-question="How was your day?">
+
+	  <select data-conv-question="What do you feel like doing?🤔🤔🤔" name="category">
+        <option value="op_1">Smash </option>
+        <option value="op_2">Me time </option>
+		<option value="op_3">Sleepy🥱😴 </option>
+		<option value="op_4">Play sports </option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="op_1">
+          <input type="text" name="domainName" data-conv-question="Oh-oh you seem to be angry. How about listening to ilayaraja songs?🎶">    
+        </div>
+        <div data-conv-case="op_2" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Self time is best but dont forget to think in a poitive way.So ,Best thing that ever happened"> 
+        </div>
+		<div data-conv-case="op_3">
+			<input type="text" name="domainName" data-conv-question="lool you are definitely not consious 😹😹">    
+		</div>
+		<div data-conv-case="op_4" data-conv-fork="first-question2">
+			<input type="text" name="companyName" data-conv-question="I like the energy, lts go💪💪"> 
+		</div>
+      </div>
+	  <input type="text" name="name_1" data-conv-question="Anyways, do you feel depresses or have anxiety attaks?">
+	  <select data-conv-question="well ok do you get Thoughts, that you would be better off dead, or of hurting yourself?" name="category">
+        <option value="dep_1">NOT AT ALL </option>
+        <option value="dep_2">SEVERAL DAYS</option>
+		<option value="dep_3">MORE THAN HALF THE DAYS </option>
+		<option value="dep_4">NEARLY EVERY DAY </option>
+      </select>
+
+	  <div data-conv-fork="category">
+        <div data-conv-case="dep_1">
+          <input type="text" name="domainName" data-conv-question="Thats Truly Amazing 🥳❤️">    
+        </div>
+        <div data-conv-case="dep_2" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Call the National Suicide Prevention Lifeline (Lifeline) at 1-800-273-TALK (8255), or text the Crisis Text Line (text HELLO to 741741). Both services are free and available 24 hours a day, seven days a week. All calls are confidential."> 
+        </div>
+		<div data-conv-case="dep_3">
+			<input type="text" name="domainName" data-conv-question="Call the National Suicide Prevention Lifeline (Lifeline) at 1-800-273-TALK (8255), or text the Crisis Text Line (text HELLO to 741741). Both services are free and available 24 hours a day, seven days a week. All calls are confidential.">    
+		</div>
+		<div data-conv-case="dep_4" data-conv-fork="first-question2">
+			<input type="text" name="companyName" data-conv-question="Call the National Suicide Prevention Lifeline (Lifeline) at 1-800-273-TALK (8255), or text the Crisis Text Line (text HELLO to 741741). Both services are free and available 24 hours a day, seven days a week. All calls are confidential."> 
+		</div>
+      </div>
+
+
+	 
+
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="plz Enter your e-mail, was nice talkinng to you" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+		
+      </select>
+
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+<header class="header">
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-between">
+			<div class="col-md-auto">
+				<a href="#!" class="logo"><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-md-auto">
+				<nav class="main_nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>		
+	</div>
+</header>	
+
+<div class="banner d-flex align-items-center" style="background-image: url('images/banner.jpg');" id="home">
+	<ul class="socila_links">
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	</ul>	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="banner_cont">
+					<h1>Team S4</h1>
+					<p>Welcome to the dazlling and fascinating website to interact and have fun whilst our CHATBOT predicts your Mood!! </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>			
+
+<div class="about-section" id="about">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5 text-justify">
+				<h2 class="bdr-btm">More About us</h2>
+				<p>A chatbot is an application that generally acts as an AI to interact with users to get information, 
+				its system generated and is completely automated. Thats not all, we have come up with the dynamic and colorful
+				interactive mood check and analyser integrated in our CHATBOT which we call as MOODBOT with love. </p>
+				<a href="#contact" class="btn1">Contact Us</a>	
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">GOOD MOOD IS GOD</h3>
+					<ul>
+						<li><strong>SMILE</strong> <br>Smile is the best way to keep you boosted and motivate</li>
+						<li><strong>PLAN</strong> <br>Being organised and planned lets you to relax and stay at peace</li>
+						<li><strong>RELISH</strong> <br>Spend time with things you love or relive the best moments for happiness.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="about-box">
+					<h3 class="bdr-btm">DEPRESSION IS DEVIL</h3>
+					<ul>
+						<li><strong>SADNESS</strong> <br>Overcome sadness with the help of good will music </li>
+						<li><strong>SLEEPLESS</strong> <br>Lack of sleep is biggest culprit to cause depression</li>
+						<li><strong>HOPELESS</strong> <br>Hopelessness is the worst conddition to overcome. But lets go through it together</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="portfolio-section" id="portfolio">
+	<div id="port_pop_pic_bg"></div>
+	<div id="port_pop_pic"></div>
+	<div class="container-fluid">
+		<h2 class="text-center bdr-btm bdr-btm-center">Portfolio</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port1.jpeg');">
+					<h3>serene</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port2.jpeg');">
+					<h3>serene</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port3.jpeg');">
+					<h3>serene</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port4.jpeg');">
+					<h3>serene</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port5.jpeg');">
+					<h3>serene</h3>
+				</div>		
+			</div>
+			<div class="col-md-4">
+				<div class="portfolio-box" style="background-image: url('images/port6.jpeg');">
+					<h3>serene</h3>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contact-section d-md-flex" id="contact">
+  <div class="col-md-6 col-12 contact_section_left">
+    <div class="contact_box">
+      <i class="fa fa-phone"></i>
+      <h3>Phone</h3>
+      <p>7834115678</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-envelope"></i>
+      <h3>Email</h3>
+      <p>s4_support@yipee.com</p>
+    </div>
+    <div class="contact_box">
+      <i class="fa fa-map-marker"></i>
+      <h3>Address</h3>
+      <p>IARE-Dundigal, Hyderabad</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-12 contact_section_right d-flex align-items-center">
+    <div class="contact_box">
+      <h2 class="bdr-btm">Get In Touch</h2>
+      <form>
+        <div>
+          <input type="text" name="" placeholder="Name">
+          <input type="text" name="" placeholder="Email">
+          <input type="text" name="" placeholder="Subject">
+          <textarea placeholder="Message"></textarea>
+          <input type="submit" class="inline-block" name="" value="Send Message">
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	portfolioList = document.querySelectorAll('.portfolio-box');
+	portfolioList.forEach(function(portfolioPic) {
+		portfolioPic.addEventListener('click',function(){
+			bg = this.style.backgroundImage;
+			document.getElementById('port_pop_pic_bg').classList.add("active")
+			document.getElementById('port_pop_pic').style.backgroundImage = bg
+			document.getElementById('port_pop_pic').classList.add("active")
+		});	
+	})
+	document.getElementById('port_pop_pic_bg').addEventListener('click',function(){
+			document.getElementById('port_pop_pic_bg').classList.remove("active")
+			document.getElementById('port_pop_pic').classList.remove("active")
+	})
+</script>
+
+</body>
+</html>
